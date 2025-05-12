@@ -1,0 +1,6 @@
+REGISTRATION_PATH = "/rest/v4/analytics/integrations/*/requests"
+USER_PATH = "/rest/v4/users"
+OBJECT_TRACKS_PATH = "/rest/v4/analytics/objectTracks"
+BEST_SHOT_PATH = "/rest/v4/analytics/objectTracks/{id}/bestShotImage"
+HTTP_STREAM_PATH = "/rest/v4/devices/{id}/media"
+LOGIN_PATH = "/rest/v4/login/sessions"

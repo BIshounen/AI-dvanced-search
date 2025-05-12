@@ -1,0 +1,6 @@
+MEDIATOR_URL = "http://127.0.0.1:8000"
+EMBEDDINGS_PATH = "../aidvanced-search-db-filler/embeddings.db"
+MODEL_STATE_PATH = "../aidvanced-search-db-filler/openclip_vit_b32.pth"
+INDEX_PATH = "../aidvanced-search-db-filler/faiss_index.bin"
+BEST_SHOT_URL = "/devices/{device_id}/best-shots/{track_id}"
+FRAME_URL = "/devices/{0}/frame"

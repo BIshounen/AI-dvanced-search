@@ -1,0 +1,8 @@
+{
+    "id": "nx.ai-dvanced-search",
+    "name": "AIdvanced Search",
+    "isRestOnly": true,
+    "description": "Integration for getting data for AIdvanced Search application",
+    "vendor": "Network Optix",
+    "version": "0.0.1"
+}

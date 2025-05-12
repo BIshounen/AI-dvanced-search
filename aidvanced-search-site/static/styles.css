@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --Dark-dark-4: #0D0F12;
+    --light-light-1: #FFF;
+    --dark-dark-13: #3F545F;
+    --Light-light-4: #E5E8EB;
+    --dark-dark-7: #212A2F;
+    --dark-dark-8: #263137;
+}
+
+body {
+    background: var(--Dark-dark-4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.search-bar {
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 16px;
+    border: 8px solid #075176;
+
+    background: var(--light-light-1);
+}
+
+.search-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.search-input {
+    background-color: var(--light-light-1);
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: var(--dark-dark-133-f-545-f);
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search-input:focus {
+    background-color: var(--light-light-1);
+    border: none;
+    outline: none;
+}
+
+.clear-button {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.clear-button-invisible {
+    display: none;
+}
+
+.go-button {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.go-button-disabled {
+    opacity: 0.1;
+}
+
+.input-container {
+    display: flex;
+    padding: 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 0;
+}
+
+.card-container {
+    display: flex;
+    width: 470px;
+    height: 420px;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 23px;
+    border-radius: 12px;
+    background: var(--Light-light-4);
+}
+
+.results-container {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    height: 80px;
+    aspect-ratio: 1;
+    box-sizing: border-box;
+    position: relative;
+    mask: 
+      radial-gradient(#0000 47%,#000 48% 71%,#0000 72%) exclude,
+      conic-gradient(#000 0 0) no-clip;
+    animation: l11 1.5s linear infinite;
+  }
+  .loader:before {
+    content: "";
+    position: absolute;
+    inset: 0 35% 70%;
+    border-radius: 50%;
+    background: #a11c8f;
+    filter: blur(15px);
+  }
+  @keyframes l11 {
+    to {rotate: 1turn}
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    align-self: stretch;
+  }
+
+.logo-small{
+    width: 300px;
+    aspect-ratio: 21/1;
+}
+
+.image-container{
+    height: 338.162px;
+    aspect-ratio: 438.00/338.16;
+}
+
+.canvas-content{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+    height: 100%;
+    background: var(--Dark-dark-4);
+}
+
+.side-panel{
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: var(--dark-dark-7);
+}
+
+.work-area-container{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.work-area-buttons {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.work-area-image {
+    height: 1000.588px;
+    align-self: stretch;
+    aspect-ratio: 1296.00/1000.59;
+}
+
+.device-item{
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    align-self: stretch;
+    color: var(--light-light-1);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.device-item.selected{
+    background-color: var(--dark-dark-13)
+}
+
+
+.device-item:hover{
+    background-color: var(--dark-dark-8)
+}

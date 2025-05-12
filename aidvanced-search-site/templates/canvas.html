@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}"/>
+    <script src="{{ url_for('static',filename='scripts/canvas.js') }}"></script>
+    <script>var get_frame_url="{{ get_frame_url }}"</script>
+</head>
+<body>
+<div class="canvas-content">
+    <div class="side-panel" id="side-panel">
+    </div>
+    <div class="work-area-container">
+        <div class="work-area-buttons">
+            <button id="grab-button">Grab current frame</button>
+            <button id="search-selection-button">Search selection</button>
+        </div>
+        <div class="work-area-image" id="work-area-image">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

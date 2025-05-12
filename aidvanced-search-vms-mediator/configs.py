@@ -1,0 +1,5 @@
+SERVER_URL = "https://`192.0.0.1:7001"
+CREDENTIALS_PATH = ".creds.json"
+INTEGRATION_MANIFEST_PATH = "integration_manifest.json"
+ENGINE_MANIFEST_PATH = "engine_manifest.json"
+DEVICE_AGENT_MANIFEST_PATH = "device_agent_manifest.json"

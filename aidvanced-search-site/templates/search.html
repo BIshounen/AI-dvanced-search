@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI-dvanced Search</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}"/>
+    <script src="{{ url_for('static',filename='scripts/scripts.js') }}"></script>
+</head>
+<body>
+    <div class="search-container">
+        <div class="search-bar">
+            <div class="search-icon">
+                <img src="{{ url_for('static',filename='img/search.svg') }}"/>
+            </div>
+            <div class="input-container">
+                <input type="text" id="search-input" class="search-input"/>
+                <div class="clear-button-invisible" id="clear-button">
+                    <img src="{{ url_for('static',filename='img/close_medium.svg') }}"/>
+                </div>
+            </div>
+            <div class="go-button-disabled" id="go-button">
+                <img src="{{ url_for('static',filename='img/go-button.svg') }}"/>
+            </div>
+        </div>
+        <div class="logo-small">
+            <img src="{{ url_for('static',filename='img/AI-dvanced Search-Logo.svg') }}"/>
+        </div>
+    </div>
+    <div class="results-container" id="results-container">
+        {% for item in cards %}
+        <div class="card-container">
+            <div >
+                <a href="{{ item['search_url'] }}" onclick="disable_search()">Search image</a>
+            </div>
+            <div class="image-container" onclick="sceneItemsController.addSceneItem({{ item['time_ms'] }}, '{{ item['device_id'] }}')">
+                <script>add_image("{{ item['img_url'] }}", this)</script>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
